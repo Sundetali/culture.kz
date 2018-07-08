@@ -1,0 +1,34 @@
+.item-box {
+	margin-bottom: 1.4rem;
+    transition: box-shadow 0.3s ease-in-out;
+    background: #fff;
+	.items-right {
+		width: 100%;
+	    padding: 1.4rem;
+		span {
+			font-size: 1.0833rem;
+		    display: block;
+		    color: #444;
+		    &.name {
+		    	font-size: 1.25rem;
+			    font-weight: 550;
+			    margin: 3px 0;
+		    }
+		}
+		.reservation-сount {
+			line-height: 1;
+		    font-size: 1.0833rem;
+		    color: #707070;
+		}
+	}
+}
+/*single page*/
+
+.default_content p {
+    margin: 20px 0px;
+    line-height: 28px;
+    font-size: 1.3rem;
+}
+#zhety {
+	width: 800px;
+}

@@ -1,0 +1,236 @@
+$red: #de483d;
+$yellow: #faca4a;
+
+@import 'jefood';
+
+body,html {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	background: #f6f6f6;
+	color: #444;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	&:hover{
+		text-decoration: none;
+		color: none;
+	}
+}
+label {
+	font-weight: 700;
+}
+img {
+	max-width: 100%;
+	cursor: pointer;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+     box-shadow: none!important; 
+}
+.btn:focus {
+	box-shadow: none!important;	
+}
+.nav-item:focus {
+	outline: none!important;
+}
+.modal-header {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+	background: #fff !important;
+    padding: 10px 10rem;
+    /* position: fixed;
+    width: 100%;
+    z-index: 10; */
+	a {
+		font-size: 1.5rem;
+		transition:.5s ease all;
+		&:hover {
+			color: $red!important;
+		}
+	}
+	.logo {
+		width: 220px;
+	}
+}
+.border-red-wrapper {
+	display: inherit;
+	text-align: center;
+}
+.btn-red {
+	background: $red;
+	&:hover {
+		border: 1px solid $red;
+		color: $red!important;
+		background: #fff;
+	}
+}
+.btn {
+	text-transform: uppercase;
+	color: #fff!important;
+	border: 1px solid transparent;
+	transition: .5s all ease;
+	a {
+		color: #fff;
+		&:hover {
+			color: $red;
+		}
+	}
+}
+
+.btn-yellow {
+	background: $yellow;
+	&:hover {
+		border: 1px solid $yellow;
+		color: $yellow!important;
+		background: #fff;
+	}
+}
+.border-red {
+	display: inline;
+	border-right: 5px solid $red;
+	border-left: 5px solid $red;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-transform: uppercase;
+}
+.red {
+	color: $red;
+}
+.rest {
+	color: #fff;
+	padding: 3rem;
+	opacity: .9;
+	transition: .5s opacity esea;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+}
+section {
+	background: transparent;
+	padding: 1.5rem 0; 
+}
+.product {
+	margin-bottom: 3rem;
+	padding: 4rem 0;
+    border-bottom: 2px solid #666;
+    &#product-4 {
+    	border: 0;
+    }
+	img {
+		border-radius: 10px;
+	}
+	h5 {
+		margin-bottom: 0;
+	}
+	h1 {
+		font-size: 4rem;
+		line-height: 1;
+		margin-bottom:1.5rem;
+	}
+	p {
+		color: #666666;
+		font-size: 1.5rem;
+	}
+	.btn {
+		margin-left: auto;
+	}
+	.btn-even {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+.items .btn {
+	margin-left: auto;
+}
+.fa-times {
+		cursor: pointer;
+		font-size: 1.7rem;
+		color: $red;
+		margin-left: auto;
+	}
+#registration {
+	.nav-tabs {
+		cursor: pointer;
+		border: 0;
+		align-self: center;
+		h5.nav-link {
+			border: 0;
+			border-bottom: 1px solid transparent;
+			transition: .5s border-color ease;
+			a {
+				&:hover {
+					color: $red;
+				}
+			}
+			&.active {
+				border: 0;
+				border-bottom: 1px solid $red;
+			}
+			&:hover,
+			&.active {
+				border-bottom: 1px solid $red;
+				color: $red;
+			}
+		}
+	}
+}
+.welcome {
+	padding: 5rem 0;
+	color: #fff;
+    background: #000 url('../img/main.png');
+    background-size: cover;
+   	height: 100vh;
+   	h2 {
+   		font-size: 3rem;
+   	}
+	h1 {
+		font-size: 4.3rem;
+		margin: 6rem 0 10rem;
+	}
+	.fa-chevron-down {
+		border: 1px solid #fff;
+	    border-radius: 100%;
+	    padding: 1rem;
+	    cursor: pointer;
+	    font-size: 1.5rem;
+	}
+	.down {
+		position: absolute;
+	    left: 50%;
+	    bottom: 8%;
+	}
+}
+.group {
+	height: 300px;
+	width: 500px; 
+}
+.footer-copyright {
+	color: #666;
+}
+footer {
+	background: #222222;
+	width: 100%;
+	color: #fff;
+	.fab {
+		font-size: 2rem;
+		color: #666;
+    }
+	a {
+		color: #666;
+		text-decoration: underline;
+		&:hover {
+			color: #666;
+		}
+	}
+}

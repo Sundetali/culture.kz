@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SiteName</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex flex-column">
+                    <i class="fas fa-times ml-auto" data-dismiss="modal"></i>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs d-flex align-items-center" role="tablist">
+                        <li class="nav-item ">
+                            <h5 class="nav-link active show" href="#signin" role="tab" data-toggle="tab">
+                        ВХОД 
+                    </h5>
+                        </li>
+                        <li><span>/</span></li>
+                        <li class="nav-item">
+                            <h5 class="nav-link" href="#signup" role="tab" data-toggle="tab">
+                        РЕГИСТРАЦИЯ
+                     </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <form role="tabpanel" class="tab-pane fade in active show" id="signin">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="email form-control" id="email" placeholder="пишите свои почту">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password" class="password form-control" id="password" placeholder="пишите пароль">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <button type="submit" class="btn btn-red btn-valid">ВОЙТИ</button>
+                        </form>
+                        <form role="tabpanel" class="tab-pane fade" id="signup">
+                            <div class="form-group">
+                                <label for="data">ФИО</label>
+                                <input type="text" class="namesurname form-control" id="data" placeholder="ФИО">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="text" class="phoneNumber form-control" id="phone" placeholder="пиишите свои номер телефона">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="email form-control" id="email" placeholder="пишите свои почту">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password" class="form-control password" placeholder="пишите пароль">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="repeatPassword">Повторите пароль</label>
+                                <input type="password" class="repeatPassword form-control" id="repeatPassword" placeholder="повторите свои пароль">
+                                <span class="valid"></span>
+                                <span></span>
+                            </div>
+                            <button type="submit" class="btn btn-red btn-valid">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fas fa-times" data-dismiss="modal"></i>
+            <h5>Отпрваить нам сообщение</h5>
+          </div>
+          <div class="modal-body">
+            <form class="" id="signup">
+                <p class="mb-3">Оставьте свои данные в этой форме, и мы получим его на e-mail и обязательно ответим!</p>
+              <div class="form-group">
+                    <label for="">Ваше имя</label>
+                    <input type="text" class="name form-control" id="name" placeholder="Ваше имя">
+                    <span class="valid"></span>
+                    <span></span>
+              </div>
+              <div class="form-group">
+                    <label for="">Ваше телефон</label>
+                    <input type="text" class="phoneNumber form-control" id="phone"placeholder="Ваше телефон">
+                    <span class="valid"></span>
+                    <span></span>
+              </div>
+              <div class="form-group">
+                <label for="">Ваше почта</label>
+                <input type="email" class="email form-control" id="email" placeholder="пишите свои почту">
+                <span class="valid"></span>
+                <span></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleSelect1">число людей</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                    <label for="">Дата заезда</label>
+                    <input type="text" class="form-control" id="phone"placeholder="дата2">
+              </div>
+              <div class="form-group">
+                    <label for="">Дата отъезда</label>
+                    <input type="text" class="form-control" id="phone"placeholder="дата2">
+              </div>
+              <button type="submit" class="btn btn-red btn-valid">ОТПРАВИТЬ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.php"><img src="img/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <?php if(!isset($_SESSION['login'])):?>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.php" data-toggle="modal" data-target="#registration">войти</a>
+                </li>
+                <?php else:?>
+                <li>
+                    <a class="nav-link" href="#"> <?php echo ($_SESSION['login']) ?></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php">выйти</a>
+                </li>
+              <?php endif; ?>
+            </ul>
+        </div>
+    </nav>
+    <section class="items">
+        <div class="container">
+           <div class="border-red-wrapper mb-4">
+                <h1 class="border-red">Алтыбакан</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="img-wrapper" id="zhety">
+                    <img src="img/dastur1.jpg" alt="">
+                </div>
+                <div class="default_content mx-auto w-75" itemprop="description">
+                    <p>Одно из приятных и любимых удовольствий, которое мало кто, способен, себе запретить – это вкусно поесть.</p>
+                    <p>Порой, бывает очень сложно оторваться от вкусной еды, а если это застолье в ресторане «Жеті Казына», богато представленного блюдами казахской и азиатской кухни, то, расхожее выражение «сам сыт, да глаза голодны» можно смело нанести на майку и наслаждаться едой с закрытыми глазами.</p>
+                    <p>Ведь, что может быть вкуснее ароматного плова с аппетитными крупными кусочками мяса, или душистого лагмана с жареным подливом «синьцзянь», что говорить о сочных кусочках кавказского шашлыка со сдобной горячей тандырной лепёшкой или о бешбармаке, который славится на весь город…</p>
+                    <p>«Жеті Казына» – это довольно большой и просторный зал, в котором вы без труда узнаете частички уйгурских, узбекских, киргизских, китайских и казахских национальных традиционных убранств и особенностей оформления интерьера. Уже на входе Вы прикоснетесь к глубокой философии Востока: здесь растет гранат – символ богатства, страсти и плодородия.</p>
+                    <p>Это интересно:Существует древняя легенда, которая гласит, что каждый настоящий казахский кочевник владел семью сокровищами — «Жеті Казына» — мужеством настоящего джигита, красивой женой, быстроногим скакуном, охотничьим беркутом, верным псом, хорошим ружьем, и очагом для приготовления пищи. Обладатель этих сокровищ считался самым счастливым, везучим и богатым человеком.</p>
+                    <div class="w-100">
+                        <a href="#" class="btn btn-red ml-auto mr-3" data-toggle="modal" data-target="#callback">записаться</a>    
+                        <a href="Dastur.php" class="btn btn-yellow ml-auto">назад</a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src=""></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+  </script>
+</body>
+</html>
